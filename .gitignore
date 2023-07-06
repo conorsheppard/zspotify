@@ -165,5 +165,8 @@ cython_debug/
 # Spotify Credentials
 credentials*
 *.bak
+
 api.http
 test.py
+
+docker/download/
