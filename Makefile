@@ -49,4 +49,7 @@ copy-creds:
 copy-creds-to-container:
 	docker cp $$(pwd)/archive/credentials.json $$(docker ps -aqf "name=zspotify_container"):/
 
+pip-download:
+	zspotify -tr $$VAR -md /Volumes/SANDISK\ 2/ZSpotify\ Music/ -cf $$(pwd)/archive/credentials.json --archive $$(pwd)/archive/archive.json
+
 .PHONY: default run build run run-async start run-ssh ssh exec copy-creds copy-creds-to-container
