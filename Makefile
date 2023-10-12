@@ -51,5 +51,6 @@ copy-creds-to-container:
 
 pip-download:
 	zspotify -tr $$VAR -md /Volumes/SANDISK\ 2/ZSpotify\ Music/ -cf $$(pwd)/archive/credentials.json --archive $$(pwd)/archive/archive.json
+# 	zspotify -tr $$VAR -md /Users/conorsheppard/Downloads/ -cf $$(pwd)/archive/credentials.json --archive $$(pwd)/archive/archive.json
 
 .PHONY: default run build run run-async start run-ssh ssh exec copy-creds copy-creds-to-container
